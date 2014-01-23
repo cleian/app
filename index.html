@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic fotorama</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+  <!-- Fotorama -->
+  <link href="fotorama.css" rel="stylesheet">
+  <script src="fotorama.js"></script>
+  <!-- Just don’t want to repeat this prefix in every img[src] -->
+  <base href="http://fotorama.s3.amazonaws.com/i/okonechnikov/">
+</head>
+
+<body>
+<!-- Start of first page -->
+    <div data-role="page">
+    <!-- Fotorama -->
+    	<div data-role="panel" id="mypanel">
+    <!-- panel content goes here -->
+    		<ul data-role="listview">
+                <li><a href="#panel-responsive-page2">modern</a></li>
+                <li><a href="#panel-responsive-page2">vintage</a></li>
+                <li><a href="#panel-responsive-page2">Autocomplete</a></li>
+                <li><a href="#panel-responsive-page2">Buttons</a></li>
+                <li><a href="#panel-responsive-page2">Checkboxes</a></li>
+                <li><a href="#panel-responsive-page2">Collapsibles</a></li>
+                <li data-icon="delete"><a href="#" data-rel="close">Close menu</a></li>
+        </ul>
+		</div><!-- /panel -->
+        
+        <div data-role="header" data-position="fixed" data-fullscreen="true">
+            <h1>Fashion</h1>
+            <a href="#mypanel" data-icon="bars" data-iconpos="notext">Menu</a>
+        </div><!-- /header -->
+    
+        <div role="main" class="ui-content">
+        <style>
+		 .center{ margin:0 auto;}
+		</style>
+        	<div class="center">
+                <div class="fotorama" data-nav="thumbs" data-keyboard="true">
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                    <a href="http://placehold.it/900x900"><img src="http://placehold.it/900x900"></a>
+                </div>
+            </div>
+        </div><!-- /content -->
+    		
+        <div data-role="footer"  data-position="fixed" data-fullscreen="true">
+            <h4>e-mail:creyan@naver.co(up load address)</h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+<!-- © -->
+</body>
+</html>
