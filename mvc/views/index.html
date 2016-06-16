@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+	body,html,ul{margin: 0; padding: 0; color:#777;}
+	li{list-style: none;}
+	img{display: block; border: 0}
+	#wrap{ width: 100% }
+	#header{ position: relative;}
+	#header p{position: absolute; font-size: 77px; top: 30px; left: 30px;}
+	#container{ overflow: hidden;position: relative; }
+	#content_1{float: left; width: 61.8%;position: relative;}
+	#content_2{float: left; width: 38.2%;position: relative;}
+	#content_3{float: right; width: 61.8%;position: relative;}
+	#content_4{float: right; width: 38.2%; background: #ddd;position: relative;}
+	#content_5{float: left; width: 61.8%;position: relative;}
+	.clk{position: absolute;bottom: 30px; right: 30px; font-size: 33px;}
+	.menu_list{display: none; position: absolute; bottom: 70px; left: 30px;}
+	#menu_1:checked ~ .menu_list{display: block}
+	input[type=checkbox] {
+		display: none;
+	}
+	</style>
+	<div id="wrap">
+		<div id="header">
+			<img src="http://placehold.it/1000x1000" width="100%">
+			<p>character</p>
+			<ul>
+				<li><input type="checkbox" id="menu_1">
+					<label for="menu_1" id="menu_2" class="clk">click</label>
+					<ul class="menu_list">
+						<li>character_1</li>
+						<li>character_2</li>
+						<li>character_3</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="back">
+			</div>
+		</div>
+		<div id="container">
+			<div id="content_1">
+				<img src="http://placehold.it/1000x1000" width="100%">
+			</div>
+			<div id="content_2">
+				<div id="content_3">
+				<img src="http://placehold.it/1000x1000" width="100%">
+				</div>
+				<div id="content_4">
+				<img src="http://placehold.it/1000x1000" width="100%">
+					<div id="content_5">
+					<img src="http://placehold.it/1000x1000" width="100%">
+					</div>
+				</div>
+				<img src="http://placehold.it/1000x1000" width="100%">
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
